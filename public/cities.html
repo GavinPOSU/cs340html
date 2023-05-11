@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Pokemon Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Pokemon Database Cities</h1>
+
+[ <a href="cities.html">Pokemon Cities</a> | <a href="pokemon.html">Pokemon</a> | <a href="gymleaders.html">Gym Leaders</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Cities</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>City Name</th>
+    <th>Attraction</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Pewter City</td>
+    <td >Pewter Musuem of Science</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Eterna City</td>
+    <td >The Cycle Shop</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Lavaridge Town</td>
+    <td >Hot Springs</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addCity">
+        <legend><strong>Add a City</strong></legend>
+          <fieldset class="fields">
+            <label> City Name </label> <input type="text" name="name">
+            <label> Attraction </label> <input type="text" name="attraction">
+          </fieldset>
+          <input class="btn" type="submit" id="addCity" value="Add a City">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateCity">
+      <legend><strong>Update a City</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> City Name </label> <input type="text" value="test" name="name">
+            <label> Attraction </label> <input type="text"  name="attraction" value="test">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveCity" value="Save Update City">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteCity">
+      <legend><strong>Delete City</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>City Name</label> Pewter City
+
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteCity" value="Delete City">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- delete -->
+
+</body>
+</html>
