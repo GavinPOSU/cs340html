@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Pokemon Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Pokemon Database</h1>
+
+[ <a href="cities.html">Pokemon Cities</a> | <a href="pokemon.html">Pokemon</a> | <a href="gymleaders.html">Gym Leaders</a> | <a href="types.html">Types</a> | <a href="pokemon_types.html">Pokemon with their types</a> |  <a href="gymleader_pokemon.html">Gym Leader's Pokemon</a>  ]
+
+<div id="browse" style="display: block">
+<p><strong>Browse Pokemon and Their Types</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Pokemon Name</th>
+    <th>Type</th>
+    <th>Generation</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Geodude</td>
+    <td >Rock</td>
+    <td align="right" >1</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Geodude</td>
+    <td >Ground</td>
+    <td align="right" >1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addGymLeader">
+        <legend><strong>Add Pokemon and Their Types</strong></legend>
+          <fieldset class="fields">
+            <label> Pokemon Name </label> <input type="text" name="name">
+            <label> Type </label> <select name="type">
+              <option value="0">&nbsp;</option>
+                <option value="1">Rock</option>
+                <option value="2">Fire</option>
+                <option value="3">Water</option>
+                </select>
+            <label> Generation </label> <input type="text" name="city">
+          </fieldset>
+          <input class="btn" type="submit" id="addGL" value="Add a Gym Leader">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateGL">
+      <legend><strong>Update Pokemon and Their Type</strong></legend>
+          <fieldset class="fields">
+            <label> Pokemon Name </label> <input type="text" name="name">
+            <label> Type </label> <select name="type">
+              <option value="0">&nbsp;</option>
+                <option value="1">Rock</option>
+                <option value="2">Fire</option>
+                <option value="3">Water</option>
+                </select>
+            <label> Generation </label> <input type="text" name="city">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateGL" value="Save Update Gym Leader">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteGL">
+      <legend><strong>Delete Pokemon Type Set</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+            <label> Name </label> Geodude
+
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePlanet" value="Delete Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- delete -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Pokemon Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Pokemon Database</h1>
+
+[ <a href="cities.html">Pokemon Cities</a> | <a href="pokemon.html">Pokemon</a> | <a href="gymleaders.html">Gym Leaders</a> | <a href="types.html">Types</a> | <a href="pokemon_types.html">Pokemon with their types</a> |  <a href="gymleader_pokemon.html">Gym Leader's Pokemon</a>  ]
+
+<div id="browse" style="display: block">
+<p><strong>Browse Pokemon Types</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Type Name</th>
+    <th>Color</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >Rock</td>
+    <td >Brass</td>
+    <td align="right" >Super-effective against Bug, Fire, Flying, and Ice while rock-type pokemon are weak to Fighting, Grass, Ground, Steel, and Water-type moves</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addGymLeader">
+        <legend><strong>Add Types</strong></legend>
+          <fieldset class="fields">
+            <label> Type Name </label> <input type="text" name="name">
+            <label> Color </label> <input type="text" name="city">
+            <label> Description </label> <input type="text" name="city">
+          </fieldset>
+          <input class="btn" type="submit" id="addGL" value="Add a Gym Leader">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateGL">
+      <legend><strong>Update Types</strong></legend>
+          <fieldset class="fields">
+            <label> Type Name </label> <input type="text" name="name">
+            <label> Color </label> <input type="text" name="city">
+            <label> Description </label> <input type="text" name="city">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateGL" value="Save Update Gym Leader">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteGL">
+      <legend><strong>Delete Types</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+            <label> Name </label> Dark
+
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePlanet" value="Delete Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- delete -->
+</body>
+</html>

@@ -9,51 +9,32 @@
 [ <a href="cities.html">Pokemon Cities</a> | <a href="pokemon.html">Pokemon</a> | <a href="gymleaders.html">Gym Leaders</a> | <a href="types.html">Types</a> | <a href="pokemon_types.html">Pokemon with their types</a> |  <a href="gymleader_pokemon.html">Gym Leader's Pokemon</a>  ]
 
 <div id="browse" style="display: block">
-<p><strong>Browse Gym Leaders</strong></p>
+<p><strong>Browse Gym Leader's Pokemon</strong></p>
 <table border="1" cellpadding="5">
   <tr>
     <th><a href="#">New</a></th>
     <th></th>
-    <th>Name</th>
-    <th>City Name</th>
-    <th>Type</th>
+    <th>Pokemon Name</th>
+    <th>Gym Leader Name</th>
+    <th>Level Cap</th>
   </tr>
   <tr>
     <td><a href="#">Edit</a></td>
     <td><a href="#">Delete</a></td>
-    <td align="right" >Brock</td>
-    <td >Pewter City</td>
-    <td align="right" >Rock</td>
-  </tr>
-  <tr>
-    <td><a href="#">Edit</a></td>
-    <td><a href="#">Delete</a></td>
-    <td align="right" >Brock1</td>
-    <td >Pewter City</td>
-    <td align="right" >Rock</td>
-  </tr>
-  <tr>
-    <td><a href="#">Edit</a></td>
-    <td><a href="#">Delete</a></td>
-    <td align="right" >Brock2</td>
-    <td >Pewter City</td>
-    <td align="right" >Rock</td>
+    <td align="right" >Geodude</td>
+    <td >Brock</td>
+    <td align="right" >14</td>
   </tr>
 </table>
 <p>&nbsp;</p>
 </div> <!-- browse -->
 <div id="insert" style="display: block">
     <form id="addGymLeader">
-        <legend><strong>Add Gym Leader</strong></legend>
+        <legend><strong>Add Gym Leader Pokemon</strong></legend>
           <fieldset class="fields">
-            <label> Name </label> <input type="text" name="name">
-            <label> City </label> <input type="text" name="city">
-            <label> Type </label> <select name="type">
-            	<option value="0">&nbsp;</option>
-                <option value="1">Rock</option>
-                <option value="2">Fire</option>
-                <option value="3">Water</option>
-                </select>
+            <label> Pokemon Name </label> <input type="text" name="name">
+            <label> Gym Leader Name </label> <input type="text" name="city">
+            <label> Level Cap </label> <input type="text" name="city">
           </fieldset>
           <input class="btn" type="submit" id="addGL" value="Add a Gym Leader">
           <input class="btn" type="button" value="cancel">
@@ -63,16 +44,11 @@
 <p>&nbsp;</p>
 <div id="update" style="display: block">
   <form id="updateGL">
-      <legend><strong>Update Gym Leader</strong></legend>
+      <legend><strong>Update Gym Leader Pokemon</strong></legend>
           <fieldset class="fields">
-            <label> Name </label> <input type="text" value="test" name="name">
-            <label> City </label> <input type="text"  name="population" value="test">
-            <label> Type </label> <select name="type">
-              <option value="0">&nbsp;</option>
-                <option value="1">Rock</option>
-                <option value="2">Fire</option>
-                <option value="3">Water</option>
-                </select>
+            <label> Pokemon Name </label> <input type="text" name="name">
+            <label> Gym Leader Name </label> <input type="text" name="city">
+            <label> Level Cap </label> <input type="text" name="city">
     </fieldset>
     <input class="btn" type="submit" id="UpdateGL" value="Save Update Gym Leader">
           <input class="btn" type="button" value="cancel" >
@@ -81,11 +57,12 @@
 <p>&nbsp;</p>
 <div id="delete" style="display: block">
   <form id="deleteGL">
-      <legend><strong>Delete Gym Leader</strong></legend>
+      <legend><strong>Delete Gym Leader Pokemon</strong></legend>
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
-          <label>ID:</label> 1
-            <label> Name </label> Brock
+          <label>PID:</label> 1
+          <label>GID:</label> 1
+            <label> Name </label> Brock's Geodude
 
     </fieldset>
     <input class="btn" type="submit" id="DeletePlanet" value="Delete Planet">

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Pokemon Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Pokemon Database</h1>
+
+[ <a href="cities.html">Pokemon Cities</a> | <a href="pokemon.html">Pokemon</a> | <a href="gymleaders.html">Gym Leaders</a> | <a href="types.html">Types</a> | <a href="pokemon_types.html">Pokemon with their types</a> |  <a href="gymleader_pokemon.html">Gym Leader's Pokemon</a>  ]
+
+<div id="browse" style="display: block">
+<p><strong>Browse Pokemon</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Num</th>
+    <th>Name</th>
+    <th>Evolution Yield</th>
+    <th>Ability</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >0095</td>
+    <td >Onix</td>
+    <td align="right" >1 Def</td>
+    <td>Sturdy</td>
+  </tr>
+
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addPlanet">
+        <legend><strong>Add Pokemon</strong></legend>
+          <fieldset class="fields">
+            <label> Num </label> <input type="text" name="name">
+            <label> Name </label> <input type="text" name="population">
+            <label> Evolution Yield </label> <input type="text" name="language">
+            <label> Ability </label> <input type="text" name="language">
+          </fieldset>
+          <input class="btn" type="submit" id="addPlanet" value="Add a Planet">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updatePlanet">
+      <legend><strong>Update Pokemon</strong></legend>
+          <fieldset class="fields">
+            <label> Num </label> <input type="text" name="name">
+            <label> Name </label> <input type="text" name="population">
+            <label> Evolution Yield </label> <input type="text" name="language">
+            <label> Ability </label> <input type="text" name="language">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSavePlanet" value="Save Update Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deletePlanet">
+      <legend><strong>Delete Pokemon</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>Num:</label> 0095
+            <label> Name </label> Onix
+
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePlanet" value="Delete Planet">
+          <input class="btn" type="button" value="cancel" >
+  </form>
+</div><!-- delete -->
+</body>
+</html>
